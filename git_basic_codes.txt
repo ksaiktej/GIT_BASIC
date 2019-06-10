@@ -1,0 +1,46 @@
+redirect
+	cd ~/Desktop
+create repository
+	sai$ mkdir myproject
+
+Initialise
+	git init
+
+add new files
+ 	touch add.txt
+get status
+	git status
+to track ( adds to staging server) or  index
+	git add
+commit ( savepoint)
+	git commit
+
+ex: myproject sai$ git commit -m "This is first commit!"
+
+Branching
+----------
+
+check to a branch
+	git checkout -b <my-new-branch>
+
+verifying branch
+	git branch (* points to present branch)
+merge
+
+push local repo into git
+	git remote add origin https://github.com/kskt/mynewrepository.git
+	myproject sai$ git push -u origin master
+
+origin = " git@github.com:git/git.git "
+
+push changes to new branch
+	git push origin mynewbranch
+
+create a Pull request: while creating pull request " base: , compare: " terms will be there (2 files i.e, merging)
+			this is to inform owner about the changes going to made in master
+Merge pull request:  updates code in master
+
+MASTER PAGE UPDATED
+
+Get changes dont in master page to local machine
+	git pull origin master
